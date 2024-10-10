@@ -1,28 +1,48 @@
-import AdvCalculator from "./advCal.js";
+import AdvCalculator from "./advCal.js"; 
 
-class VerAdvac extends AdvCalculator {
-    minus(num1, num2) { 
+export default class VerAdvac extends AdvCalculator {
+    minus(num1, num2) {
         return num1 - num2;
     }
-    multiply(num1, num2) { 
+    multiply(num1, num2) {
         return num1 * num2;
     }
     divide(num1, num2) {
+        if (num2 === 0) {
+            return "Cannot divide by zero!";
+        }
         return num1 / num2;
     }
-    
     power(base, exponent) {
-        return Math.pow(base, exponent); 
+        return Math.pow(base, exponent);
     }
 }
 
-const vvad = new VerAdvac(); // istance variable.
-const minusResult = vvad.minus(10, 5);
-const multiplyResult = vvad.multiply(5, 2);
-const divideResult = vvad.divide(10, 2);
-const powerM = vvad.power(minusResult, divideResult);
+// Create an instance of VerAdvac
+const vvad = new VerAdvac();
 
-console.log("Minus result: ", minusResult); 
-console.log("Multiply result: ", multiplyResult);
-console.log("Divide result: ", divideResult); 
-console.log("Power result: ", powerM); 
+window.performOperation = function (operation) {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+
+    let result;
+
+    switch (operation) {
+        case 'minus':
+            result = vvad.minus(num1, num2);
+            break;
+        case 'multiply':
+            result = vvad.multiply(num1, num2);
+            break;
+        case 'divide':
+            result = vvad.divide(num1, num2);
+            break;
+        case 'power':
+            result = vvad.power(num1, num2);
+            break;
+        default:
+            result = "Invalid operation!";
+    }
+
+    document.getElementById("calcResult").innerText = "Result: " + result;
+};
