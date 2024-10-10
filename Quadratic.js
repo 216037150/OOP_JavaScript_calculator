@@ -17,6 +17,7 @@ class SolveX extends VerAdvac {
         }
 
         if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            resultDiv.className = "error"
             resultDiv.innerText = "All fields must be filled with numbers.";
         
             return;  
