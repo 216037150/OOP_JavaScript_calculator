@@ -1,10 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(9, 68, 68);
+    background-color: rgb(5, 65, 85);
+}
+.Equation{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    /* margin-bottom: 10px; */
+    padding: 5px;
+    text-align: center;
+    /* background-color: #499bb1; */
+}
+#grad9{
+    color: white;
+    margin-bottom: 5px;
+    padding: 2px;
 }
 
 .app {
@@ -12,7 +25,7 @@ body {
     flex-direction: row; 
     justify-content: space-around;
     width: 100%;
-    max-width: 1200px; 
+    /* max-width: 1200px;  */
 }
 
 .calculator,
@@ -24,6 +37,8 @@ body {
     width: 45%; 
     min-width: 300px; 
 }
+
+
 
 input {
     width: 95%; 
@@ -39,9 +54,9 @@ input {
 }
 
 button {
-    width: 22%;
+    width: 19%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #499bb1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -64,8 +79,38 @@ h1 {
     margin-top: 20px;
     font-weight: bold;
 }
-.error {
-    color: red; /* Set text color to red */
-    font-weight: bold; /* Optional: make the text bold */
+.result {
+    font-size: 18px;
+    color: black;
+  }
+
+  .error {
+    color: red; 
+    font-weight: bold; 
+  }
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; 
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold
+
+    
+}
+a:hover{
+    color:rgb(37, 226, 37);
+    text-decoration: underline;
+}
+#delite{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: rgb(203, 32, 32);
+}
+#delite:hover{
+    background-color: red
 }
 

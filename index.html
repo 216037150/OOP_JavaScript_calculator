@@ -8,7 +8,11 @@
     <script defer type="module" src="Quadratic.js"></script>
     <!-- <script defer type="module" src="VerAdvac.js"></script>  -->
 </head>
-<body>
+<body>       
+     <h1 id="grad9">GRADE 9: CALCULATOR</h1>
+     <p class="Equation"><strong>f(x) = ax<sup>2</sup> + bx + c</strong></p>
+     <a href="./Grade9.pdf" target="_blank"><strong>Practice</strong></a>
+
     <div class="app">
         <div class="calculator">
             <h1>Simple Calculator</h1>
@@ -16,12 +20,13 @@
             <input type="number" id="num2" placeholder="Enter second number" required>
             
             <div class="buttons">
+                <button onclick="performOperation('add')">+</button>
                 <button onclick="performOperation('minus')">-</button>
                 <button onclick="performOperation('multiply')">*</button>
                 <button onclick="performOperation('divide')">/</button>
                 <button onclick="performOperation('power')">^</button>
             </div>
-            <h2 id="calcResult">Result: </h2> <!-- ID should match -->
+            <h2 id="calcResult">Result: </h2> 
         </div>
     
         <div class="container">
@@ -33,5 +38,7 @@
             <div class="result" id="quadResult"></div>
         </div>
     </div>
+    <button type="button" id="delite">Delete</button>
+
 </body>
 </html>

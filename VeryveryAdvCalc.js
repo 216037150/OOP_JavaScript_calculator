@@ -1,6 +1,9 @@
 import AdvCalculator from "./advCal.js"; 
 
 export default class VerAdvac extends AdvCalculator {
+    add(num1, num2){
+        return num1 + num2;
+    }
     minus(num1, num2) {
         return num1 - num2;
     }
@@ -28,6 +31,9 @@ window.performOperation = function (operation) {
     let result;
 
     switch (operation) {
+        case 'add': 
+            result = vvad.add(num1, num2)
+            break;
         case 'minus':
             result = vvad.minus(num1, num2);
             break;
