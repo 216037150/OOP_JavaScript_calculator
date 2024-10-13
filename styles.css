@@ -114,3 +114,22 @@ a:hover{
     background-color: red
 }
 
+/* responsive */
+
+@media (max-width: 850px){
+  .app{
+        /* background-color:aqua; */
+        flex-direction: column;
+        gap:10px;
+    }
+    .calculator{
+        /* background-color:aqua; */
+        width: 10px;
+
+    }
+    #delite{
+        text-align: center;
+        margin-left: 3px;
+    }
+}
+
