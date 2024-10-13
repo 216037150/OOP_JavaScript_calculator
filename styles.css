@@ -121,6 +121,7 @@ a:hover{
         margin: 0px;
         padding: 0px;
         /* background-color:rgb(8, 63, 63); */
+        
     }
   .app{
         /* background-color:aqua; */
@@ -128,6 +129,8 @@ a:hover{
         gap:10px;
         /* max-width: 60px; */
         text-align: center;
+        /* border: black solid 5px;
+        width: 110%; */
     }
 
     .buttons{
@@ -149,12 +152,14 @@ a:hover{
         margin-left: 7px;
         background-color: rgb(226, 33, 33);
         color: white;
+        margin-bottom: 10px;
     }
     #delite:hover{
         background-color: aqua;
         color: red;
         font-size: large;
         font-weight: bold;
+        
     }
     .grad{
         text-align: center;
