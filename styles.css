@@ -116,7 +116,7 @@ a:hover{
 
 /* responsive */
 
-@media (min-width: 576px ){
+@media (max-width: 850px ){
 /*     min-width: 576px */
 /*     max-width: 850px */
     body{
